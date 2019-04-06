@@ -70,7 +70,7 @@ define([
     cm_config.extraKeys = $.extend(cm_config.extraKeys || {}, {
       'Esc': CodeMirror.prototype.leaveInsertMode,
       'Shift-Esc': CodeMirror.prototype.leaveNormalMode,
-      'Ctrl-C': CodeMirror.prototype.leaveInsertOrNormalMode,
+      'Ctrl-C': CodeMirror.prototype.handleCtrlC,
     });
 
     // Apply default CodeMirror config to existing CodeMirror instances
